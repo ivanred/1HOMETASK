@@ -13,7 +13,4 @@ function findMaxValue(products) {
    }
    return expensProduct;
 }
-
-console.log(findMaxValue(products));
-
 module.exports = findMaxValue;

@@ -1,4 +1,4 @@
-const { sortProducts, findMaxValue, modifyProducts } = require('./tasks');
+const {sortP:sortProducts, findMax, modifyProducts } = require('./tasks');
 const products = require('./Products.json');
 
 function boot(products, key, value) {
@@ -6,7 +6,7 @@ function boot(products, key, value) {
    console.log('Sort:', sortedProducts);
    const modProd = modifyProducts(sortedProducts);
    console.log('Mod:', modProd);
-   console.log(findMaxValue(modProd));
+   console.log(findMax(modProd));
 }
 
 boot(products, 'type', 'socks');

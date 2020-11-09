@@ -15,7 +15,7 @@ const json = JSON.stringify([
 ]);
 
 function sortProducts(products, key, value) {
-   return products.filter((product) => product[key] && product[key] === value);
+   return products.filter((product) => product[key] === value);
 }
 
 module.exports = sortProducts;
